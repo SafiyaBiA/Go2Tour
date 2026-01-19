@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 30 20% 98%;
+    /* Warm off-white */
+    --foreground: 20 10% 15%;
+    /* Deep earthy dark */
+
+    --card: 0 0% 100%;
+    --card-foreground: 20 10% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 20 10% 15%;
+
+    --primary: 25 90% 45%;
+    /* Saffron/Terracotta */
+    --primary-foreground: 0 0% 98%;
+
+    --secondary: 180 30% 96%;
+    /* Soft Teal/Water */
+    --secondary-foreground: 180 50% 25%;
+
+    --muted: 30 15% 94%;
+    --muted-foreground: 25 5% 45%;
+
+    --accent: 45 90% 50%;
+    /* Golden Sun */
+    --accent-foreground: 20 10% 15%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 30 10% 90%;
+    --input: 30 10% 90%;
+    --ring: 25 90% 45%;
+
+    --radius: 1rem;
+  }
+
+  .dark {
+    --background: 20 10% 10%;
+    --foreground: 30 20% 98%;
+
+    --card: 20 10% 12%;
+    --card-foreground: 30 20% 98%;
+
+    --popover: 20 10% 12%;
+    --popover-foreground: 30 20% 98%;
+
+    --primary: 25 90% 55%;
+    --primary-foreground: 20 10% 10%;
+
+    --secondary: 180 30% 15%;
+    --secondary-foreground: 30 20% 98%;
+
+    --muted: 20 10% 15%;
+    --muted-foreground: 25 5% 65%;
+
+    --accent: 45 90% 50%;
+    --accent-foreground: 20 10% 10%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 20 10% 20%;
+    --input: 20 10% 20%;
+    --ring: 25 90% 55%;
+  }
+}
+
+@layer base {
+  * {
+    border-color: hsl(var(--border));
+  }
+
+  body {
+    background-color: hsl(var(--background));
+    color: hsl(var(--foreground));
+    font-family: 'Inter', system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: 'Playfair Display', serif;
+    letter-spacing: -0.025em;
+  }
+}
+
+.font-sans {
+  font-family: 'Inter', system-ui, sans-serif;
+}
+
+.font-display {
+  font-family: 'Playfair Display', serif;
+}
+
+/* Glassmorphism Utilities */
+.glass {
+  @apply bg-white/10 backdrop-blur-md border border-white/20;
+}
+
+.glass-dark {
+  @apply bg-black/30 backdrop-blur-md border border-white/10;
+}

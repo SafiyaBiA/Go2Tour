@@ -1,0 +1,30 @@
+{
+    "app_name": "Go2Tour",
+    "nav": {
+        "home": "Home",
+        "map": "Map",
+        "ar": "AR View",
+        "safety": "Safety",
+        "profile": "Profile",
+        "sign_in": "Sign In"
+    },
+    "hero": {
+        "badge": "Discover User-Friendly Tamil Nadu",
+        "title": "Go2Tour Tamil Nadu",
+        "subtitle": "Experience the timeless temples, vibrant culture, and untouched nature of the south.",
+        "explore_map": "Explore Map",
+        "start_adventure": "Start Adventure"
+    },
+    "categories": {
+        "browse_title": "Browse by Interest",
+        "view_all": "View All",
+        "temples": "Temples",
+        "cuisine": "Cuisine",
+        "nature": "Nature",
+        "culture": "Culture"
+    },
+    "destinations": {
+        "popular_title": "Popular Destinations",
+        "reviews": "reviews"
+    }
+}

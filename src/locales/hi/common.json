@@ -1,0 +1,30 @@
+{
+    "app_name": "Go2Tour",
+    "nav": {
+        "home": "होम",
+        "map": "नक्शा",
+        "ar": "AR व्यू",
+        "safety": "सुरक्षा",
+        "profile": "प्रोफ़ाइल",
+        "sign_in": "साइन इन"
+    },
+    "hero": {
+        "badge": "तमिलनाडु की खोज करें",
+        "title": "Go2Tour तमिलनाडु",
+        "subtitle": "दक्षिण भारत के मंदिरों, संस्कृति और प्रकृति का अनुभव करें।",
+        "explore_map": "नक्शा देखें",
+        "start_adventure": "यात्रा शुरू करें"
+    },
+    "categories": {
+        "browse_title": "रुचियां",
+        "view_all": "सभी देखें",
+        "temples": "मंदिर",
+        "cuisine": "भोजन",
+        "nature": "प्रकृति",
+        "culture": "संस्कृति"
+    },
+    "destinations": {
+        "popular_title": "लोकप्रिय स्थान",
+        "reviews": "समीक्षाएं"
+    }
+}
