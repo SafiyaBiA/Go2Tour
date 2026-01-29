@@ -12,9 +12,12 @@ export default function GuidedSearch() {
 
     // Step 1: Vibe / Intent (Story: "I want to explore...")
     const intents = [
-        { id: 'spiritual', label: 'Spirituality', icon: Sparkles, desc: 'Ancient temples & rituals', image: 'https://images.unsplash.com/photo-1548013146-72479768bada?q=80&w=1000&auto=format&fit=crop' },
-        { id: 'heritage', label: 'Heritage', icon: Compass, desc: 'Lost cities & history', image: 'https://images.unsplash.com/photo-1590050752117-238cb0fb12b1?q=80&w=1000&auto=format&fit=crop' },
-        { id: 'nature', label: 'Nature', icon: Compass, desc: 'Hill stations & wilds', image: 'https://images.unsplash.com/photo-1544634076-a90160bcaf7b?q=80&w=1000&auto=format&fit=crop' },
+        { id: 'spiritual', label: 'Spiritual', icon: Sparkles, desc: 'Ancient temples & sacred rituals', image: 'https://images.unsplash.com/photo-1548013146-72479768bada?q=80&w=1000&auto=format&fit=crop' },
+        { id: 'nature', label: 'Nature', icon: Compass, desc: 'Misty hills & lush escapes', image: 'https://images.unsplash.com/photo-1544634076-a90160bcaf7b?q=80&w=1000&auto=format&fit=crop' },
+        { id: 'culture', label: 'Culture', icon: Compass, desc: 'Arts, crafts & living history', image: 'https://images.unsplash.com/photo-1590050752117-238cb0fb12b1?q=80&w=1000&auto=format&fit=crop' },
+        { id: 'food', label: 'Food', icon: Sparkles, desc: 'Authentic flavors & street trails', image: 'https://images.unsplash.com/photo-1512621776951-a57141f2eefd?q=80&w=1000&auto=format&fit=crop' },
+        { id: 'wellness', label: 'Wellness', icon: Compass, desc: 'Healing, yoga & rejuvenation', image: 'https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?q=80&w=1000&auto=format&fit=crop' },
+        { id: 'adventure', label: 'Adventure', icon: Compass, desc: 'Thrills, treks & coastal action', image: 'https://images.unsplash.com/photo-1533130061792-64b345e4a833?q=80&w=1000&auto=format&fit=crop' },
     ];
 
     // Step 2: Companion (Story: "...with my...")
@@ -53,10 +56,10 @@ export default function GuidedSearch() {
                             exit={{ opacity: 0, x: -20 }}
                             className="space-y-6 text-center"
                         >
-                            <h2 className="text-3xl font-display font-bold text-gray-900">What calls to your soul today?</h2>
-                            <p className="text-gray-500">I want to explore...</p>
+                            <h2 className="text-3xl font-display font-bold text-gray-900">What brings you to Tamil Nadu today?</h2>
+                            <p className="text-gray-500 italic">“I want to experience...”</p>
 
-                            <div className="grid md:grid-cols-3 gap-4">
+                            <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
                                 {intents.map((item) => (
                                     <button
                                         key={item.id}

@@ -50,13 +50,13 @@ export default function SafetyView() {
     return (
         <div className="pb-24 min-h-screen bg-stone-50">
             {/* Header */}
-            <div className="bg-white px-6 pt-8 pb-12 rounded-b-[40px] shadow-sm text-center">
-                <div className="inline-flex items-center justify-center p-3 bg-emerald-100 text-emerald-700 rounded-full mb-4">
-                    <Shield className="w-8 h-8" />
+            <div className="bg-white px-6 pt-12 pb-16 rounded-b-[40px] shadow-sm text-center">
+                <div className="inline-flex items-center justify-center p-4 bg-emerald-50 text-emerald-600 rounded-full mb-6 border border-emerald-100">
+                    <Shield className="w-10 h-10" />
                 </div>
-                <h1 className="text-3xl font-display font-bold text-gray-900 mb-2">You are Safe Here</h1>
-                <p className="text-gray-500 max-w-sm mx-auto">
-                    We are monitoring your journey 24/7. Validated safe zone.
+                <h1 className="text-4xl font-display font-bold text-gray-900 mb-3 tracking-tight">Travel with Confidence</h1>
+                <p className="text-gray-500 max-w-sm mx-auto leading-relaxed">
+                    Tamil Nadu welcomes you with open arms. We're here to ensure your journey is as safe as it is beautiful.
                 </p>
             </div>
 
@@ -126,21 +126,55 @@ export default function SafetyView() {
                     </button>
                 </div>
 
-                {/* Emergency Numbers */}
-                <div className="bg-indigo-900 text-white p-6 rounded-3xl">
-                    <h3 className="font-bold mb-4 opacity-80">Quick Dial</h3>
+                {/* Nearby Services */}
+                <div className="bg-white p-6 rounded-3xl shadow-lg border border-gray-100">
+                    <h3 className="text-lg font-bold text-gray-900 mb-4">Nearby Confidence Zones</h3>
                     <div className="space-y-4">
-                        <div className="flex justify-between items-center border-b border-white/10 pb-2">
-                            <span>Police</span>
-                            <a href="tel:100" className="font-mono font-bold text-lg">100</a>
+                        <div className="flex items-start gap-4">
+                            <div className="p-2 bg-blue-50 rounded-lg">
+                                <Shield className="w-5 h-5 text-blue-600" />
+                            </div>
+                            <div>
+                                <p className="font-bold text-sm text-gray-900">B-2 Police Station, Madurai</p>
+                                <p className="text-xs text-gray-500">Distance: 1.2km • 24/7 Active</p>
+                            </div>
                         </div>
-                        <div className="flex justify-between items-center border-b border-white/10 pb-2">
-                            <span>Ambulance</span>
-                            <a href="tel:108" className="font-mono font-bold text-lg">108</a>
+                        <div className="flex items-start gap-4">
+                            <div className="p-2 bg-red-50 rounded-lg">
+                                <AlertTriangle className="w-5 h-5 text-red-600" />
+                            </div>
+                            <div>
+                                <p className="font-bold text-sm text-gray-900">Apollo Hospital (Emergency)</p>
+                                <p className="text-xs text-gray-500">Distance: 3.5km • Critical Care Ready</p>
+                            </div>
                         </div>
-                        <div className="flex justify-between items-center">
-                            <span>Tourism Helpline</span>
-                            <a href="tel:1363" className="font-mono font-bold text-lg">1363</a>
+                    </div>
+                </div>
+
+                {/* Emergency Numbers */}
+                <div className="bg-stone-900 text-white p-8 rounded-[2.5rem]">
+                    <h3 className="font-bold mb-6 text-stone-400 uppercase tracking-widest text-xs">Always Within Reach</h3>
+                    <div className="space-y-6">
+                        <div className="flex justify-between items-center bg-white/5 p-4 rounded-2xl">
+                            <div>
+                                <p className="text-xs text-stone-400">Police Assistance</p>
+                                <p className="font-display font-bold text-lg">100 / 112</p>
+                            </div>
+                            <Button size="sm" className="bg-white text-black hover:bg-stone-200 rounded-full px-6">Call</Button>
+                        </div>
+                        <div className="flex justify-between items-center bg-white/5 p-4 rounded-2xl">
+                            <div>
+                                <p className="text-xs text-stone-400">Medical Emergency</p>
+                                <p className="font-display font-bold text-lg">108</p>
+                            </div>
+                            <Button size="sm" className="bg-white text-black hover:bg-stone-200 rounded-full px-6">Call</Button>
+                        </div>
+                        <div className="flex justify-between items-center bg-white/5 p-4 rounded-2xl">
+                            <div>
+                                <p className="text-xs text-stone-400">Tourist Support</p>
+                                <p className="font-display font-bold text-lg">1363</p>
+                            </div>
+                            <Button size="sm" className="bg-white text-black hover:bg-stone-200 rounded-full px-6">Call</Button>
                         </div>
                     </div>
                 </div>

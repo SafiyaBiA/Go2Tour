@@ -25,8 +25,9 @@ i18n
                 common: hiCommon
             }
         },
-        fallbackLng: 'en',
+        fallbackLng: 'ta',
         debug: true,
+        lng: 'ta', // Forces Tamil initially if no detection
         defaultNS: 'common',
 
         interpolation: {

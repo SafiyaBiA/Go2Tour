@@ -1,77 +1,49 @@
-<<<<<<< HEAD
-# React + TypeScript + Vite
+# Go2Tour: AI Tourism Companion for Tamil Nadu
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Go2Tour is a modern, AI-powered platform designed to help travelers experience Tamil Nadu confidently, safely, and meaningfully.
 
-Currently, two official plugins are available:
+## 🚀 Product Vision
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Our mission is to solve the problem of traveler confidence. Instead of just listing locations, we provide:
+- **Intent Discovery**: Understanding why you are visiting.
+- **Story-based Discovery**: Curated experiences over data dumps.
+- **Safety First**: Integrated SOS and trusted routing.
+- **Multilingual Support**: Tamil-first experience.
 
-## React Compiler
+For a detailed breakdown of our product roadmap, see [VISION.md](./VISION.md).
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🛠️ Features
 
-## Expanding the ESLint configuration
+- **Personalized Recommendations**: Based on intent, season, and time.
+- **Augmented Reality**: Interactive heritage experiences.
+- **Safe Navigation**: Local-trusted routes and transport hints.
+- **Admin Dashboard**: Government-aligned safety and moderation.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 💻 Tech Stack
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- **Frontend**: React + TypeScript + Vite
+- **Styling**: Tailwind CSS
+- **Backend/DB**: Firebase (Firestore, Auth)
+- **Maps**: Leaflet / Google Maps
+- **i18n**: i18next (Tamil & English)
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## 🚦 Getting Started
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+### Prerequisites
+- Node.js (v18+)
+- npm
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### Installation
+1. Clone the repository
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+3. Set up environment variables in `.env` (see `.env.example`)
+4. Start the development server:
+   ```bash
+   npm run dev
+   ```
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
-=======
-# Go2Tour
->>>>>>> 5e0d7ac0a91578131654bc1e5d5a148f10b06e22
+## 📄 License
+MIT

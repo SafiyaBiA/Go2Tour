@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { ArrowLeft, MapPin, Star, Share2, Heart, Clock, Users, Calendar, Sparkles } from 'lucide-react';
+import { ArrowLeft, MapPin, Star, Share2, Heart, Clock, Users, Calendar, Sparkles, Shield, ArrowRight } from 'lucide-react';
 import { motion } from 'framer-motion';
 import BookingCard from '@/features/booking/BookingCard';
 import ReviewList from '@/features/discovery/ReviewList';
@@ -24,7 +24,15 @@ export default function DestinationDetailView() {
             { icon: Clock, label: "Best Time", value: "6 AM - 9 AM" },
             { icon: Users, label: "Crowd Level", value: "Moderate" },
             { icon: Calendar, label: "Duration", value: "2-3 hours" },
-        ]
+            { icon: Shield, label: "Safety", value: "Verified Safe Zone" },
+        ],
+        etiquette: [
+            "Dress modestly (shoulders and knees covered)",
+            "Remove footwear before entering",
+            "Non-Hindus are not allowed in the inner sanctum",
+            "Photography is restricted in certain areas"
+        ],
+        story: "For over 2,500 years, this temple has been the pulsating heart of Madurai. It's not just stone and mortar; it's a living archive of Dravidian soul. Legends say the city was formed where nectar fell from Lord Shiva's hair... and this temple is the spot where it all began."
     };
 
     return (
@@ -79,6 +87,11 @@ export default function DestinationDetailView() {
                                     <span className="font-bold">{destination.rating}</span>
                                     <span className="text-white/80">({destination.reviews})</span>
                                 </div>
+                                <span className="text-white/60">•</span>
+                                <div className="flex items-center gap-2 px-3 py-1 bg-emerald-500/20 backdrop-blur-md rounded-full border border-emerald-500/30">
+                                    <Shield className="w-4 h-4 text-emerald-400" />
+                                    <span className="text-xs font-bold text-emerald-400">Trusted Location</span>
+                                </div>
                             </div>
                         </motion.div>
                     </div>
@@ -107,18 +120,44 @@ export default function DestinationDetailView() {
                             ))}
                         </div>
 
-                        {/* Description Card */}
+                        {/* Story Card */}
                         <div className="bg-white rounded-3xl p-8 shadow-lg border border-gray-100">
                             <div className="flex items-center gap-2 mb-4">
                                 <Sparkles className="w-5 h-5 text-yellow-500" />
-                                <h2 className="text-2xl font-display font-bold text-gray-900">About this place</h2>
+                                <h2 className="text-2xl font-display font-bold text-gray-900">Why this place matters</h2>
                             </div>
-                            <p className="text-lg text-gray-600 leading-relaxed mb-4">
-                                {destination.description}
+                            <p className="text-xl text-gray-800 font-serif italic leading-relaxed mb-6">
+                                "{destination.story}"
                             </p>
                             <p className="text-lg text-gray-600 leading-relaxed">
-                                Experience the divine atmosphere during the evening ceremony. The architecture is a testament to the Dravidian style, featuring intricate pilaster work and large gopurams that tower over the city.
+                                {destination.description}
                             </p>
+                        </div>
+
+                        {/* Etiquette & AR CTA */}
+                        <div className="grid md:grid-cols-2 gap-6">
+                            <div className="bg-stone-100 rounded-3xl p-6 border border-stone-200">
+                                <h3 className="text-xl font-bold text-stone-800 mb-4 flex items-center gap-2">
+                                    <Users className="w-5 h-5" /> Cultural Etiquette
+                                </h3>
+                                <ul className="space-y-2">
+                                    {destination.etiquette.map((item, i) => (
+                                        <li key={i} className="flex gap-2 text-stone-600 text-sm italic">
+                                            <span className="text-stone-400">•</span> {item}
+                                        </li>
+                                    ))}
+                                </ul>
+                            </div>
+                            <Link to="/ar" className="bg-indigo-600 rounded-3xl p-6 text-white flex flex-col justify-between hover:bg-indigo-700 transition-all group">
+                                <div>
+                                    <Sparkles className="w-8 h-8 mb-4 text-indigo-200 group-hover:rotate-12 transition-transform" />
+                                    <h3 className="text-xl font-bold">Experience in AR</h3>
+                                    <p className="text-indigo-100 text-sm mt-2 opacity-80">See historical layers and hidden stories come to life.</p>
+                                </div>
+                                <div className="flex items-center gap-2 mt-4 font-bold text-sm">
+                                    Launch AR Companion <ArrowRight className="w-4 h-4" />
+                                </div>
+                            </Link>
                         </div>
 
                         {/* Image Gallery */}

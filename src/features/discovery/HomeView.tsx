@@ -42,9 +42,8 @@ export default function HomeView() {
                 >
                     <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-transparent to-black/80 z-10" />
                     <img
-                        src="https://images.unsplash.com/photo-1516483638261-f4dbaf036963?q=80&w=2666&auto=format&fit=crop" /* Cinque Terre placeholder replaced with Indian-vibe one or generic beautiful travel */
-                        /* Actually let's use a specific TN one from MOCK_DESTINATIONS or similar high quality */
-                        className="w-full h-full object-cover"
+                        src="https://images.unsplash.com/photo-1548013146-72479768bada?q=80&w=2666&auto=format&fit=crop" /* Meenakshi Temple or similar iconic TN view */
+                        className="w-full h-full object-cover grayscale-[20%] brightness-[70%]"
                         alt="Hero Background"
                     />
                     {/* Video background preferred in production */}
@@ -114,21 +113,21 @@ export default function HomeView() {
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     <JourneyCard
                         time="3 Days"
-                        title="Cultural Heritage Tour"
-                        desc="Immerse yourself in ancient traditions and historical marvels."
-                        image="https://images.unsplash.com/photo-1587474260584-c95b66cece41?q=80&w=2670&auto=format&fit=crop"
+                        title="The Spiritual Circuit"
+                        desc="Walk through ancient corridors of power and prayer in Madurai & Tanjore."
+                        image="https://images.unsplash.com/photo-1582510003544-4d00b7f74220?q=80&w=2670&auto=format&fit=crop"
                     />
                     <JourneyCard
-                        time="5 Days"
-                        title="Western Ghats Adventure"
-                        desc="Trek through misty mountains, lush forests, and serene waterfalls."
+                        time="4 Days"
+                        title="Nilgiri Mist & Tea"
+                        desc="Escape to the blue mountains for a wellness retreat amidst tea estates."
                         image="https://images.unsplash.com/photo-1596495578065-6f8071691639?q=80&w=2670&auto=format&fit=crop"
                     />
                     <JourneyCard
-                        time="7 Days"
-                        title="Coastal Serenity Escape"
-                        desc="Relax on pristine beaches and explore vibrant fishing villages."
-                        image="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=2670&auto=format&fit=crop"
+                        time="2 Days"
+                        title="Chettinad Heritage Trail"
+                        desc="Discover the grand mansions and legendary cuisine of the Chettiars."
+                        image="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?q=80&w=2670&auto=format&fit=crop"
                     />
                 </div>
                 <div className="text-center mt-12">
